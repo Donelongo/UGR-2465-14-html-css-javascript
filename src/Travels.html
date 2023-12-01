@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Travels</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>Travel</title>
 </head>
 <body>
     <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
+        <img  class="logo" src="/src/Images/name-logo.png" alt="Me">
         <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
+            <ul class="nav_link">
+                <li><a href="/src/Home.html" id="home">Home</a></li>
+                <li><a href="/src/Accomp.html" id="accomplishment">Accomplishemnts</a></li>
+                <li><a href="/src/Hobbies.html" id="hobbies">Hobbies</a></li>
+                <li><a href="/src/Travels.html" id="Travels" class="current">Travels</a></li>
+                <li><a href="/src/Photography.html" id="photography">Photography</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Places I have been</h1>
         <div id="first-travel">
-            <img src="/src/Images/debreziet.jpg" alt="Travel image">
+            <figure>
+                <img class="image" src="/src/Images/debreziet.jpg" alt="Travel image">
+                <figcaption>Fig: Debreziet, Ethiopia</figcaption>
+            </figure>
             <h2>Debrezeit</h2>
             <aside>
                 <p>
@@ -33,7 +35,10 @@
             </aside>
         </div>
         <div id="second-travel">
-            <img src="/src/Images/German.jpg" alt="Travel image">
+            <figure>
+                <img class="image" src="/src/Images/German.jpg" alt="Travel image">
+                <figcaption>Fig: Darmstadt, Germany</figcaption>
+            </figure>
             <h2>Germany</h2>
             <aside>
                 <p>
@@ -42,7 +47,10 @@
             </aside>
         </div>
         <div id="third-travel">
-            <img src="/src/Images/France.jpg" alt="Travel image">
+            <figure>
+                <img class="image" src="/src/Images/France.jpg" alt="Travel image">
+                <figcaption>Fig: strasbourg,France</figcaption>
+            </figure>
             <h2>France</h2>
             <aside>
                 <p>
@@ -52,7 +60,10 @@
         </div>
         <h1>Places I wanna Go</h1>
         <div id="First-want">
-            <img src="/src/Images/Bali.png" alt="Travel image">
+            <figure>
+                <img class="image" src="/src/Images/Bali.png" alt="Travel image">
+                <figcaption>Fig: Bali, Indonesia</figcaption>
+            </figure>
             <h2>Bali</h2>
             <aside>
                 <p>
@@ -63,22 +74,44 @@
         </main>
         <footer>
             <div class="socialmedia">
-                <div class="icon">
-                    <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
+                <div class="icon socialico">
+                    <a class="socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
+                        <img src="/src/Images/instagram.svg" alt="Instagram Icon">
+                    </a>
                 </div>
-                <div class="icon">
-                    <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
+                <div class="icon socialico">
+                    <a class="socialmedia-icon" href="https://twitter.com/elias_dagmawi">
+                        <img src="/src/Images/twitter.svg" alt="Twitter Icon">
+                    </a>
                 </div>
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+                <div class="icon socialico">
+                    <a class="socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                        <img src="/src/Images/linkedin.svg" alt="Linkedin Icon">
+                    </a>
                 </div>
             </div>
     
             <div class="contact">
-                    <div class="Name">Dagmawi Elias</div>
-                    <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                    <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                    <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+                <div class="icon contactico">
+                    <div class="iconwrapper">
+                        <img class="contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
+                    </div>
+                    <a class="contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
+                </div>
+                <div class="icon contactico">
+                    <div class="iconwrapper">
+                        <img class="contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
+                    </div>
+                    <a class="contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
+                </div>
+                <div class="icon contactico">
+                   <div class="iconwrapper">
+                    <img class="contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
+                   </div>
+                   <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contacttxt">
+                    Addis Ababa Institue of Technology
+                   </a>
+                </div>
             </div>
         </footer>
     </body>

@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Hobbies</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>Hobbbies</title>
 </head>
 <body>
     <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-            <nav class="Navbar">
-                <ul>
-                    <li><a href="/src/Home.html">Home</a></li>
-                    <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                    <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                    <li><a href="/src/Travels.html">Travels</a></li>
-                    <li><a href="/src/Photography.html">Photography</a></li>
-                </ul>
+        <img  class="logo" src="/src/Images/name-logo.png" alt="Me">
+        <nav class="Navbar">
+            <ul class="nav_link">
+                <li><a href="/src/Home.html" id="home">Home</a></li>
+                <li><a href="/src/Accomp.html" id="accomplishment">Accomplishemnts</a></li>
+                <li><a href="/src/Hobbies.html" id="hobbies" class="current">Hobbies</a></li>
+                <li><a href="/src/Travels.html" id="Travels">Travels</a></li>
+                <li><a href="/src/Photography.html" id="photography">Photography</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -27,8 +26,8 @@
                 Among my many hobbies, I've singled out four that truly resonate with me. Reading offers diverse perspectives, while photography lets me artistically capture moments. Cooking is a creative outlet, where I experiment with flavors and techniques. Lastly, hiking reconnects me with nature, providing both physical activity and serene moments of tranquility.
             </p>
         </aside>
-        <div id="first-hobbie">
-            <img id="hobbie-image" src="/src/Images/basketball-solid.svg" alt="hobbies logo">
+        <div class="hobbies-explanation" id="first-hobbie">
+            <img class="hobbie-image" id="hobbie-image-1" src="/src/Images/basketball-solid.svg" alt="hobbies logo">
             <aside>
                 <h2>Basketball</h2>
                 <p>    
@@ -36,8 +35,8 @@
                 </p>
             </aside>
         </div>
-        <div id="second-hobbie">
-            <img id="hobbie-image-2" src="/src/Images/camera-solid.svg" alt="hobbies logo">
+        <div class="hobbies-explanation" id="second-hobbie">
+            <img class="hobbie-image" id="hobbie-image-2" src="/src/Images/camera-solid.svg" alt="hobbies logo">
             <h2>Photography</h2>
             <aside>
                 <p>           
@@ -45,52 +44,64 @@
                 </p>
             </aside>
         </div>
-        <div id="third-hobbie">
-            <img id="hobbie-image-3" src="/src/Images/screwdriver-wrench-solid.svg" alt="hobbies logo">
+        <div class="hobbies-explanation" id="third-hobbie">
+            <img class="hobbie-image" id="hobbie-image-3" src="/src/Images/screwdriver-wrench-solid.svg" alt="hobbies logo">
             <h2>Fixing Things</h2>
             <aside>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eos harum nisi consectetur laborum quis, earum sequi?
-                    Laudantium praesentium, odit omnis distinctio quis velit cum?
-                    Libero maxime neque repellendus aut doloribus ipsam beatae?
-                    Expedita expidlicabo laborum tempore maxime atque tenetur minus.
-                    Sed, repellendus voluptas corrupti officia quibusdam aliquam dolore.
-                    Non corporis officia, vero autem possimus eius rem.
-                    Ad libero eum omnis sapiente dignissimos molestiae incidunt?
-                    Repudiandae, placeat! Dicta labore alias iusto reiciendis quis!
-                    Ullam incidunt, blanditiis cupiditate accusantium quos pariatur officia.
+                    Fixing things is my hands-on passion, an art of problem-solving in the tangible world. Whether it's a malfunctioning gadget or a broken item, I revel in the challenge of restoring functionality. It's a journey of exploration, using tools and techniques to unravel the mystery behind each issue. With each successful repair, I not only mend objects but also boost my confidence in tackling unforeseen challenges.
                 </p>
             </aside>
         </div>
-        <div id="fourth-hobbie" >
-            <img id="hobbie-image-4" src="/src/Images/church-solid.svg" alt="hobbies logo">
+        <div class="hobbies-explanation" id="fourth-hobbie" >
+            <img class="hobbie-image" id="hobbie-image-4" src="/src/Images/church-solid.svg" alt="hobbies logo">
             <h2>Church Activities</h2>
             <aside>
                 <p>                
-                    Fixing things is my hands-on passion, an art of problem-solving in the tangible world. Whether it's a malfunctioning gadget or a broken item, I revel in the challenge of restoring functionality. It's a journey of exploration, using tools and techniques to unravel the mystery behind each issue. With each successful repair, I not only mend objects but also boost my confidence in tackling unforeseen challenges.
-                </p>
+                    Serving at church holds a profound place in my life—a way to give back and connect with my community. Engaging in various church activities isn't just a commitment; it's a source of fulfillment. Whether it's volunteering for outreach programs or contributing to the worship team, each moment spent serves a purpose beyond oneself. It's about fostering unity, extending a helping hand, and being part of something larger than life—an invaluable experience that enriches both heart and soul.                </p>
             </aside>
         </div>
     </main>
     <footer>
         <div class="socialmedia">
-            <div class="icon">
-                <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
+            <div class="icon socialico">
+                <a class="socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
+                    <img src="/src/Images/instagram.svg" alt="Instagram Icon">
+                </a>
             </div>
-            <div class="icon">
-                <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
+            <div class="icon socialico">
+                <a class="socialmedia-icon" href="https://twitter.com/elias_dagmawi">
+                    <img src="/src/Images/twitter.svg" alt="Twitter Icon">
+                </a>
             </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+            <div class="icon socialico">
+                <a class="socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                    <img src="/src/Images/linkedin.svg" alt="Linkedin Icon">
+                </a>
             </div>
         </div>
 
         <div class="contact">
-                <div class="Name">Dagmawi Elias</div>
-                <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+            <div class="icon contactico">
+                <div class="iconwrapper">
+                    <img class="contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
+                </div>
+                <a class="contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
+            </div>
+            <div class="icon contactico">
+                <div class="iconwrapper">
+                    <img class="contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
+                </div>
+                <a class="contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
+            </div>
+            <div class="icon contactico">
+               <div class="iconwrapper">
+                <img class="contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
+               </div>
+               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contacttxt">
+                Addis Ababa Institue of Technology
+               </a>
+            </div>
         </div>
     </footer>
 </body>

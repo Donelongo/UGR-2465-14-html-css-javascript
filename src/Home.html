@@ -4,49 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
+    <link rel="stylesheet" href="../src/css/style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
+        <img  class="logo" src="/src/Images/name-logo.png" alt="Me">
         <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
+            <ul class="nav_link">
+                <li><a href="/src/Home.html" id="home" class="current">Home</a></li>
+                <li><a href="/src/Accomp.html" id="accomplishment">Accomplishemnts</a></li>
+                <li><a href="/src/Hobbies.html" id="hobbies">Hobbies</a></li>
+                <li><a href="/src/Travels.html" id="Travels">Travels</a></li>
+                <li><a href="/src/Photography.html" id="photography">Photography</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <img src="/src/Images/me.jpg" alt="My picture">
+        <div class="myimgContainer">
+            <img class="home my-image" src="/src/Images/me.jpg" alt="My picture">
+        </div>
         <aside>
+            <div  class="about-me">
             <p>
-                I am a student at the University of Addis Ababa Institute of Technology, Ethiopia.
+                My name is <strong class="name">Dagmawi Elias</strong>. 
+                I'm a Software Engineering student at the University of Addis Ababa Institute of Technology, Ethiopia. My portfolio highlights my technological expertise in [specific technologies], complemented by a track record of personal achievements that underscore my dedication and growth, both in life and in the realm of software development.
             </p>
+            </div>
         </aside>
     </main>
     <footer>
         <div class="socialmedia">
-            <div class="icon">
-                <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
+            <div class="icon socialico">
+                <a class="socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
+                    <img src="/src/Images/instagram.svg" alt="Instagram Icon">
+                </a>
             </div>
-            <div class="icon">
-                <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
+            <div class="icon socialico">
+                <a class="socialmedia-icon" href="https://twitter.com/elias_dagmawi">
+                    <img src="/src/Images/twitter.svg" alt="Twitter Icon">
+                </a>
             </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+            <div class="icon socialico">
+                <a class="socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                    <img src="/src/Images/linkedin.svg" alt="Linkedin Icon">
+                </a>
             </div>
         </div>
 
         <div class="contact">
-                <div class="Name">Dagmawi Elias</div>
-                <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+            <div class="icon contactico">
+                <div class="iconwrapper">
+                    <img class="contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
+                </div>
+                <a class="contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
+            </div>
+            <div class="icon contactico">
+                <div class="iconwrapper">
+                    <img class="contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
+                </div>
+                <a class="contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
+            </div>
+            <div class="icon contactico">
+               <div class="iconwrapper">
+                <img class="contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
+               </div>
+               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contacttxt">
+                Addis Ababa Institue of Technology
+               </a>
+            </div>
         </div>
     </footer>
 </body>
