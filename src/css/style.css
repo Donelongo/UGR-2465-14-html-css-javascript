@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@media (max-width: 480px) {
+    nav, .social-icons, aside {
+        display: grid;
+        grid-template-columns: 1fr; /* Adjust as needed */
+        justify-items: center;
+    }
+}
+
+/* nav start */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #24252A;
+}
+
+li, a{
+    font-family: "nunito";
+    font-weight: 500;
+    font-size: 17px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: .5rem 5% 0.5rem 2%;
+    background-color: black;
+}
+
+.logo {
+    cursor: pointer;
+    height: auto;
+    width: 100px;
+    margin-right: auto;
+    float: left;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: transparent;
+    border-radius: 5rem;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+    background-color: transparent;
+    padding: 0.3rem 0;
+}
+
+.nav_link li a:hover {
+    color: #0088a9;
+}
+
+.current {
+    color: #F7B538;
+}
+
+
+/* main start */
+
+p{
+    color: white;
+    clear: right;
+    position: relative;
+    font-size: 18px;
+    padding: 15px;
+    font-family: "nunito";
+}
+
+
+h1, h2, h3{
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-family: "nunito";
+    text-align: center;
+
+}
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.home.my-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem auto;
+    border-radius: 1em;
+    width: auto;
+}
+
+.myimgContainer{
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    padding: 0px 0px 20px 20px;
+    font-size: 20px;
+}
+
+p::first-letter {
+    font-size: 40px;
+    color: yellow;
+}
+
+.name {
+    font-size: 20px;
+    color: darkturquoise;
+    padding-bottom: 0px;
+}
+
+.image{
+    display: block;
+    width: 90vw;
+    height: auto;
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+.sliding-image {
+    margin: 0 0 0 2vw;
+    width: 96vw;
+}
+
+.hobbie-box {
+    background-color: #7C898B;
+}
+
+.hobbies-explanation {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px;
+    border-style: solid;
+    border-radius: 2rem;
+    padding: 10px;
+    background-color: #7C898B;
+    margin: 10px 1px;}
+
+.hobbie-image {
+    height: auto;
+    width: 50px;
+}
+
+figcaption{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    color: darkturquoise;
+}
+
+.landscape-carousel .slide , .portrait-carousel .slide{
+    display: grid;
+    grid-template-columns: repeat(6, 96vw);
+    width: 100vw;
+    margin: 10px;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.landscape-carousel, .portrait-carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.landscape-carousel .slide ,.landscape-carousel{
+    display: grid;
+    grid-template-columns: repeat(3, 100vw);
+}
+
+.portrait-carousel .slide, .portrait-carousel {
+    display: grid;
+    grid-template-columns: repeat(6, 100vw);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 96vw;
+    color: white;
+    padding-bottom: 10px;
+    margin: 0 2vw;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #8A8A8A;
+}
+
+tr:nth-child(odd) {
+    background-color: #2C363F;
+}
+.first-table-row{
+    font-weight: bold;
+    color: #E8EE37;
+}
+
+
+/* main end */
+
+/* footer start */
+
+footer {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr; 
+    grid-gap: 2rem;
+    width: 100%;
+    min-height: 20%;
+    background-color: #646464;
+    margin-top: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{
+    height: auto;
+    padding: 0.2rem;
+}
+
+.iconwrapper{
+    width: 2.5rem;
+    height: auto;
+    padding: 0;
+}
+
+.contactico{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+
+.contacttxt{
+    padding: 0 1rem;
+    color: white;
+    opacity: 0.7;
+    transition: 250ms;
+    font-weight: normal;
+}
+
+.nonLinkContact{
+    padding: 0 1rem;
+    opacity: 0.7;
+}
+
+.nonLinkContact::first-letter{
+    font-size: 1em;
+    color: white;
+}
+
+.contacttxt:hover{
+    opacity: 1;
+    color: blue;
+    font-weight: bolder;
+}
+
+.socialmedia-icon{
+    width: 2.5rem;
+    height: auto;
+}
+
+.socialico{
+    display: grid;
+    place-items: center;
+}
+
+.socialmedia {
+    background-color: transparent;
+    display: grid;
+    height: fit-content;
+    justify-content: center;
+    grid-template-columns: repeat(3,60px);
+    gap: max(15%, 44px);
+    padding: 1rem 2rem;
+}
+
+.contact {
+    background-color: transparent;
+    display: grid;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 10rem;
+    max-height: fit-content;
+    color: white;
+}
+
+/* footer end */
+
+
+
+
+
+
+
