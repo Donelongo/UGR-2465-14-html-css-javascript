@@ -8,97 +8,102 @@
     <title>Hobbbies</title>
 </head>
 <body>
-    <header>
-        <img  class="logo" src="/src/Images/name-logo.png" alt="Me">
-        <nav class="Navbar">
-            <ul class="nav_link">
-                <li><a href="/src/Home.html" id="home">Home</a></li>
+    <header class="header">
+        <img  class="header__logo" src="/src/Images/name-logo.png" alt="Me">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav class="header__Navbar">
+            <ul class="header__Navbar__nav_link">
+                <li><a href="/src/Home.html" id="home"">Home</a></li>
                 <li><a href="/src/Accomp.html" id="accomplishment">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html" id="hobbies" class="current">Hobbies</a></li>
-                <li><a href="/src/Travels.html" id="Travels">Travels</a></li>
+                <li><a href="/src/Hobbies.html" id="hobbies" class="header__Navbar__nav_link__current">Hobbies</a></li>
+                <li><a href="/src/Travels.html" id="travels">Travels</a></li>
                 <li><a href="/src/Photography.html" id="photography">Photography</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
-    <main>
-        <aside>
+
+    <main class="hobbies">
+        <aside  class="grid-col-span hobbies__aside-p">
             <p>
                 Among my many hobbies, I've singled out four that truly resonate with me. Reading offers diverse perspectives, while photography lets me artistically capture moments. Cooking is a creative outlet, where I experiment with flavors and techniques. Lastly, hiking reconnects me with nature, providing both physical activity and serene moments of tranquility.
             </p>
         </aside>
-        <div class="hobbies-explanation" id="first-hobbie">
-            <img class="hobbie-image" id="hobbie-image-1" src="/src/Images/basketball-solid.svg" alt="hobbies logo">
+        <div class="hobbies__hobbies-explanation" id="first-hobbie">
+            <img class="hobbies__hobbies-explanation__hobbie-image" id="hobbie-image-1" src="/src/Images/basketball-solid.svg" alt="hobbies logo">
             <aside>
-                <h2>Basketball</h2>
+                <h2 class="hobbies__hobbies-explanation__hobbie-image__hobbies-header">Basketball</h2>
                 <p>    
                     Basketball is more than a hobby for me; it's a passion that fuels my spirit. The game's rhythm and teamwork invigorate me, teaching resilience and strategy. Every dribble and shot is a chance to improve skills and embrace competition. On the court, I find joy, camaraderie, and an outlet for both physical activity and mental focus.
                 </p>
             </aside>
         </div>
-        <div class="hobbies-explanation" id="second-hobbie">
-            <img class="hobbie-image" id="hobbie-image-2" src="/src/Images/camera-solid.svg" alt="hobbies logo">
-            <h2>Photography</h2>
+        <div class="hobbies__hobbies-explanation" id="second-hobbie">
+            <img class="hobbies__hobbies-explanation__hobbie-image" id="hobbie-image-2" src="/src/Images/camera-solid.svg" alt="hobbies logo">
             <aside>
+                <h2 class="hobbies__hobbies-explanation__hobbie-image__hobbies-header">Photography</h2>
                 <p>           
                     Photography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words.
                 </p>
             </aside>
         </div>
-        <div class="hobbies-explanation" id="third-hobbie">
-            <img class="hobbie-image" id="hobbie-image-3" src="/src/Images/screwdriver-wrench-solid.svg" alt="hobbies logo">
-            <h2>Fixing Things</h2>
+        <div class="hobbies__hobbies-explanation" id="third-hobbie">
+            <img class="hobbies__hobbies-explanation__hobbie-image" id="hobbie-image-3" src="/src/Images/screwdriver-wrench-solid.svg" alt="hobbies logo">
             <aside>
+                <h2 class="hobbies__hobbies-explanation__hobbie-image__hobbies-header">Fixing Things</h2>
                 <p>
                     Fixing things is my hands-on passion, an art of problem-solving in the tangible world. Whether it's a malfunctioning gadget or a broken item, I revel in the challenge of restoring functionality. It's a journey of exploration, using tools and techniques to unravel the mystery behind each issue. With each successful repair, I not only mend objects but also boost my confidence in tackling unforeseen challenges.
                 </p>
             </aside>
         </div>
-        <div class="hobbies-explanation" id="fourth-hobbie" >
-            <img class="hobbie-image" id="hobbie-image-4" src="/src/Images/church-solid.svg" alt="hobbies logo">
-            <h2>Church Activities</h2>
+        <div class="hobbies__hobbies-explanation" id="fourth-hobbie" >
+            <img class="hobbies__hobbies-explanation__hobbie-image" id="hobbie-image-4" src="/src/Images/church-solid.svg" alt="hobbies logo">
             <aside>
+                <h2 class="hobbies__hobbies-explanation__hobbie-image__hobbies-header">Church Activities</h2>
                 <p>                
-                    Serving at church holds a profound place in my life—a way to give back and connect with my community. Engaging in various church activities isn't just a commitment; it's a source of fulfillment. Whether it's volunteering for outreach programs or contributing to the worship team, each moment spent serves a purpose beyond oneself. It's about fostering unity, extending a helping hand, and being part of something larger than life—an invaluable experience that enriches both heart and soul.                </p>
+                    Serving at church holds a profound place in my life a way to give back and connect with my community. Engaging in various church activities isn't just a commitment; it's a source of fulfillment. Whether it's volunteering for outreach programs or contributing to the worship team, each moment spent serves a purpose beyond oneself. It's about fostering unity, extending a helping hand, and being part of something larger than life—an invaluable experience that enriches both heart and soul.                </p>
             </aside>
         </div>
     </main>
     <footer>
         <div class="socialmedia">
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
                     <img src="/src/Images/instagram.svg" alt="Instagram Icon">
                 </a>
             </div>
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://twitter.com/elias_dagmawi">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://twitter.com/elias_dagmawi">
                     <img src="/src/Images/twitter.svg" alt="Twitter Icon">
                 </a>
             </div>
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
                     <img src="/src/Images/linkedin.svg" alt="Linkedin Icon">
                 </a>
             </div>
         </div>
 
         <div class="contact">
-            <div class="icon contactico">
-                <div class="iconwrapper">
-                    <img class="contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
+            <div class="icon contact__contactico">
+                <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
                 </div>
-                <a class="contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
+                <a class="contact__contactico__contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
             </div>
-            <div class="icon contactico">
-                <div class="iconwrapper">
-                    <img class="contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
+            <div class="icon contact__contactico">
+                <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
                 </div>
-                <a class="contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
+                <a class="contact__contactico__contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
             </div>
-            <div class="icon contactico">
-               <div class="iconwrapper">
-                <img class="contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
+            <div class="icon contact__contactico">
+               <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
                </div>
-               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contacttxt">
+               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contact__contactico__contacttxt">
                 Addis Ababa Institue of Technology
                </a>
             </div>

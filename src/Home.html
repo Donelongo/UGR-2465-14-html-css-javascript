@@ -8,68 +8,73 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <img  class="logo" src="/src/Images/name-logo.png" alt="Me">
-        <nav class="Navbar">
-            <ul class="nav_link">
-                <li><a href="/src/Home.html" id="home" class="current">Home</a></li>
+    <header class="header">
+        <img  class="header__logo" src="/src/Images/name-logo.png" alt="Me">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav class="header__Navbar">
+            <ul class="header__Navbar__nav_link">
+                <li><a href="/src/Home.html" id="home" class="header__Navbar__nav_link__current">Home</a></li>
                 <li><a href="/src/Accomp.html" id="accomplishment">Accomplishemnts</a></li>
                 <li><a href="/src/Hobbies.html" id="hobbies">Hobbies</a></li>
-                <li><a href="/src/Travels.html" id="Travels">Travels</a></li>
+                <li><a href="/src/Travels.html" id="travels">Travels</a></li>
                 <li><a href="/src/Photography.html" id="photography">Photography</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
     <main>
-        <div class="myimgContainer">
-            <img class="home my-image" src="/src/Images/me.jpg" alt="My picture">
-        </div>
-        <aside>
-            <div  class="about-me">
-            <p>
-                My name is <strong class="name">Dagmawi Elias</strong>. 
-                I'm a Software Engineering student at the University of Addis Ababa Institute of Technology, Ethiopia. My portfolio highlights my technological expertise in [specific technologies], complemented by a track record of personal achievements that underscore my dedication and growth, both in life and in the realm of software development.
-            </p>
+        <div class="image-about-me">
+            <div class="image-about-me__myimgContainer">
+                <img class="home image-about-me__myimgContainer__my-image" src="/src/Images/me.jpg" alt="My picture">
             </div>
-        </aside>
+            <aside>
+                <div  class="image-about-me__myimgContainer__about-me">
+                    <p class="image-about-me__myimgContainer__about-me__p">
+                        My name is <strong class="image-about-me__myimgContainer__about-me__p__name">Dagmawi Elias</strong>.<br/> 
+                        I'm a Software Engineering student at the University of Addis Ababa Institute of Technology, Ethiopia. My portfolio highlights my technological expertise in [specific technologies], complemented by a track record of personal achievements that underscore my dedication and growth, both in life and in the realm of software development.
+                    </p>
+                </div>
+            </aside>
+         </div>
     </main>
-    <footer>
+    <footer class="home footer">
         <div class="socialmedia">
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
                     <img src="/src/Images/instagram.svg" alt="Instagram Icon">
                 </a>
             </div>
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://twitter.com/elias_dagmawi">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://twitter.com/elias_dagmawi">
                     <img src="/src/Images/twitter.svg" alt="Twitter Icon">
                 </a>
             </div>
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
                     <img src="/src/Images/linkedin.svg" alt="Linkedin Icon">
                 </a>
             </div>
         </div>
-
         <div class="contact">
-            <div class="icon contactico">
-                <div class="iconwrapper">
-                    <img class="contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
+            <div class="icon contact__contactico">
+                <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
                 </div>
-                <a class="contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
+                <a class="contact__contactico__contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
             </div>
-            <div class="icon contactico">
-                <div class="iconwrapper">
-                    <img class="contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
+            <div class="icon contact__contactico">
+                <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
                 </div>
-                <a class="contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
+                <a class="contact__contactico__contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
             </div>
-            <div class="icon contactico">
-               <div class="iconwrapper">
-                <img class="contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
+            <div class="icon contact__contactico">
+               <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
                </div>
-               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contacttxt">
+               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contact__contactico__contacttxt">
                 Addis Ababa Institue of Technology
                </a>
             </div>

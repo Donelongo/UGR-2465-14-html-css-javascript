@@ -8,24 +8,28 @@
     <title>Accomplishemnts</title>
 </head>
 <body>
-    <header>
-        <img  class="logo" src="/src/Images/name-logo.png" alt="Me">
-        <nav class="Navbar">
-            <ul class="nav_link">
+    <header class="header">
+        <img  class="header__logo" src="/src/Images/name-logo.png" alt="Me">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav class="header__Navbar">
+            <ul class="header__Navbar__nav_link">
                 <li><a href="/src/Home.html" id="home">Home</a></li>
-                <li><a href="/src/Accomp.html" id="accomplishment" class="current">Accomplishemnts</a></li>
+                <li><a href="/src/Accomp.html" id="accomplishment" class="header__Navbar__nav_link__current">Accomplishemnts</a></li>
                 <li><a href="/src/Hobbies.html" id="hobbies">Hobbies</a></li>
-                <li><a href="/src/Travels.html" id="Travels">Travels</a></li>
+                <li><a href="/src/Travels.html" id="travels">Travels</a></li>
                 <li><a href="/src/Photography.html" id="photography">Photography</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
     <main>
-        <section>
+        <section >
             <h1>Education</h1>
             <div id="first-accomplishment">
                 <figure>
-                    <img class="image" src="/src/Images/Cisco_networking.png" alt="accmplishment image">
+                    <a href="/src/Images/Cisco_networking.png"> <img class="image-aside" src="/src/Images/Cisco_networking.png" alt="accmplishment image"></a>
                     <figcaption>Fig: Cisco Networking Academy Certeficate</figcaption>
                 </figure>
     
@@ -37,11 +41,11 @@
                 </aside>
             </div>
             <div id="second-accomplishment">
-                <figure>
-                    <img class="image" src="/src/Images/cisco_PT.png" alt="accomplishment image">
+                <figure  class="image-reverse-grid">
+                    <a href="/src/Images/cisco_PT.png"> <img class="image-aside " src="/src/Images/cisco_PT.png" alt="accomplishment image"></a>
                     <figcaption>Fig: Cisco Packet Tracer Certeficate</figcaption>
                 </figure>
-                <aside>
+                <aside class="paragraph-reverse-grid">
                     <h2>Cisco Packet Tracer</h2>
                     <p>        
                         I obtained my Cisco Packet Tracer certification by engaging in extensive coursework and successfully passing assessments offered through the Cisco Networking Academy. This immersive training equipped me with hands-on experience in network simulation, strengthening my proficiency in networking technologies essential for real-world applications within the tech industry.
@@ -50,7 +54,7 @@
             </div>
             <div id="third-accomplishment">
                 <figure>
-                    <img class="image" src="/src/Images/Redhat.png" alt="accomplishment image">
+                    <a href="/src/Images/Redhat.png"><img class="image-aside" src="/src/Images/Redhat.png" alt="accomplishment image"></a>
                     <figcaption>Fig: Redhat Certeficate</figcaption>
                 </figure>
                 <aside>
@@ -61,42 +65,44 @@
                 </aside>
             </div>
             <h3>My education in Table </h3>
-            <table>
-                <tr class="first-table-row">
-                  <th>Level</th>
-                  <th>School</th>
-                  <th>Year</th>
-                </tr>
-                <tr>
-                  <td>UKG/KG</td>
-                  <td>St.Mary</td>
-                  <td>2006</td>
-                </tr>
-                <tr>
-                  <td>Primary school</td>
-                  <td>Lideta Catholic Cathedral School</td>
-                  <td>2009</td>
-                </tr>
-                <tr>
-                  <td>Secondary/High school</td>
-                  <td>Lideta Catholic Cathedral School</td>
-                  <td>2018</td>
-                </tr>
-                <tr>
-                  <td>University</td>
-                  <td>Addis Ababa University</td>
-                  <td>2022</td>
-                </tr>
-            </table>
+            <div class="tabel-class">
+                <table>
+                    <tr class="tabel-class__first-table-row">
+                    <th>Level</th>
+                    <th>School</th>
+                    <th>Year</th>
+                    </tr>
+                    <tr>
+                    <td>UKG/KG</td>
+                    <td>St.Mary</td>
+                    <td>2006</td>
+                    </tr>
+                    <tr>
+                    <td>Primary school</td>
+                    <td>Lideta Catholic Cathedral School</td>
+                    <td>2009</td>
+                    </tr>
+                    <tr>
+                    <td>Secondary/High school</td>
+                    <td>Lideta Catholic Cathedral School</td>
+                    <td>2018</td>
+                    </tr>
+                    <tr>
+                    <td>University</td>
+                    <td>Addis Ababa University</td>
+                    <td>2022</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <section>
             <h1>Extra-curriculum</h1>
             <div id="first-extra-accomplishment">
-                <figure>
-                    <img class="image" src="/src/Images/tasties_basketball.jpg" alt="accomplishment image">
+                <figure class="image-reverse-grid">
+                    <a href="/src/Images/tasties_basketball.jpg"><img class="image-aside" src="/src/Images/tasties_basketball.jpg" alt="accomplishment image"></a>
                     <figcaption>Fig: Tasties Basketball Academy</figcaption>
                 </figure>
-                <aside>
+                <aside class="paragraph-reverse-grid">
                     <h2>Tasties Basketball Acadamy</h2>
                     <p>
                         I was a member of the Tasties Basketball Academy for 1 years. I was a member of the team that won the 2018/19 Ethiopian Basketball Federation (EBF) U-18 championship. I was also a member of the team that won the 2019/20 EBF U-20 championship.
@@ -107,41 +113,41 @@
     </main>
     <footer>
         <div class="socialmedia">
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://www.instagram.com/dagmawi_elias/">
                     <img src="/src/Images/instagram.svg" alt="Instagram Icon">
                 </a>
             </div>
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://twitter.com/elias_dagmawi">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://twitter.com/elias_dagmawi">
                     <img src="/src/Images/twitter.svg" alt="Twitter Icon">
                 </a>
             </div>
-            <div class="icon socialico">
-                <a class="socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+            <div class="icon socialmedia__socialico">
+                <a class="socialmedia__socialico__socialmedia-icon" href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
                     <img src="/src/Images/linkedin.svg" alt="Linkedin Icon">
                 </a>
             </div>
         </div>
 
         <div class="contact">
-            <div class="icon contactico">
-                <div class="iconwrapper">
-                    <img class="contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
+            <div class="icon contact__contactico">
+                <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/phone-solid.svg" alt="phone logo">
                 </div>
-                <a class="contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
+                <a class="contact__contactico__contacttxt" href="tel:+251-911-110-650">Phone Number: +(251) 911-1106-50</a>
             </div>
-            <div class="icon contactico">
-                <div class="iconwrapper">
-                    <img class="contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
+            <div class="icon contact__contactico">
+                <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/at-solid.svg" alt="@ logo">
                 </div>
-                <a class="contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
+                <a class="contact__contactico__contacttxt" href="mailto:dagmawielias2@gmail.com">dagmawielias2@gmail..com</a> 
             </div>
-            <div class="icon contactico">
-               <div class="iconwrapper">
-                <img class="contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
+            <div class="icon contact__contactico">
+               <div class="icon contact__contactico__iconwrapper">
+                    <img class="contact__contactico__iconwrapper__contact-icon" src="/src/Images/location-dot-solid.svg" alt="location logo">
                </div>
-               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contacttxt">
+               <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="contact__contactico__contacttxt">
                 Addis Ababa Institue of Technology
                </a>
             </div>
