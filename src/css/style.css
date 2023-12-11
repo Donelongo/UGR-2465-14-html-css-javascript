@@ -193,6 +193,11 @@ p::first-letter {
     color: yellow;
 }
 
+.image-about-me__myimgContainer__about-me__p{
+    margin-top: 40px;
+}
+
+
 .image-about-me__myimgContainer__about-me__p__name {
     font-size: 20px;
     color: darkturquoise;
