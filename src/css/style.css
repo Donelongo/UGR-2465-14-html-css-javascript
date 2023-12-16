@@ -11,27 +11,29 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
     height: 100vh;
     background: #24252A;
 }
 
+.header__logo {
+    height: auto;
+    width: 100px;
+    float: left;
+}
+
+
 header{
     display: grid;
+    display: flex;
+    flex-direction: column;
     background: var(--background);
     text-align: center;
     position: fixed;
     top: 0;
     z-index: 999;
     width: 100%;
-}
-
-.header__logo {
-    height: auto;
-    width: 100px;
-    float: left;
 }
 
 .nav-toggle{
@@ -61,7 +63,6 @@ header{
     content: '';
     position: absolute;
 }
-
 
 .nav-toggle-label span::before{
     bottom: 7px; 
@@ -114,7 +115,7 @@ nav a{
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-.header__Navbar__nav_link__current{
+.header__nav-bar__nav-link__current{
     color: #F7B538;
 }
 
@@ -232,10 +233,9 @@ p::first-letter {
 }
 
 
-.sliding-image {
-    margin: 0 0 0 2vw;
+/* .sliding-image {
     width: 96vw;
-}
+} */
 
 
 .hobbies__hobbie-box {
@@ -250,7 +250,16 @@ p::first-letter {
     border-radius: 2rem;
     padding: 10px;
     background-color: #7C898B;
-    margin: 10px 7px;}
+    margin: 10px 7px;
+
+}
+
+.hobbies__hobbies-explanation:hover {
+    transition: transform 0.5s;
+    background-color: #6e7275;
+    transform: scale(1.01);
+
+}
 
 .hobbies__hobbies-explanation__hobbie-image {
     height: auto;
@@ -280,30 +289,65 @@ figure{
     padding: 0;
 }
 
-.photos__landscape-carousel .photos__landscape-carousel__slide , 
-.photos__portrait-carousel .photos__portrait-carousel__slide{
+/* ******************************************************* */
+
+.all-carousel{
     display: grid;
-    grid-template-columns: repeat(6, 96vw);
-    width: 100vw;
-    margin: 10px;
-    scroll-snap-align: start;
-    position: relative;
+    width: 100%;
+    min-height: 22rem;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "prv main nxt";
 }
 
-.photos__landscape-carousel, .photos__portrait-carousel {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+.carouselIMG{
+    place-self: center;
+    grid-area: main;
+    display: none;
 }
 
-.photos__landscape-carousel__slide ,.photos__landscape-carousel{
-    display: grid;
-    grid-template-columns: repeat(3, 100vw);
+.active{
+    display: block;
 }
 
-.photos__landscape-carousel__slide, .photos__portrait-carousel {
-    display: grid;
-    grid-template-columns: repeat(6, 100vw);
+.carousel-button {
+    position: absolute;
+    align-self: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    background: transparent;
 }
+
+.photos__c-Btn{
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+}
+
+
+.carousel-prev{
+    grid-area: prv;
+}
+
+.carousel-next{
+
+    grid-area: nxt;
+}
+
+.photos__carousel-landscape-next{
+    position: absolute;
+    right: 3%;
+}
+
+.photos__carousel-portrait-next{
+    position: absolute;
+    right: 3%;
+}
+
+/* ******************************************************* */
+
 
 table {
     display: grid;
@@ -521,6 +565,54 @@ footer {
         display: grid;
         grid-column: span 2;
     }
+
+    .all-carousel{
+        display: grid;
+        width: 100%;
+        min-height: 22rem;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "prv main nxt";
+    }
+    
+    .carouselIMG{
+        grid-area: main;
+        display: none;
+    }
+    
+    .active{
+        display: block;
+    }
+    
+    .carousel-button {
+        position: relative;
+        place-self: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        border: none;
+        background: transparent;
+    }
+    
+    .photos__c-Btn{
+        width: 2rem;
+        height: 2rem;
+        fill: white;
+    }
+    
+    .photos__c-Btn:hover{
+        transform: scale(1.5);
+        transition: 250ms;
+    }
+    
+    .carousel-prev{
+        grid-area: prv;
+    }
+    
+    .carousel-next{
+        grid-area: nxt;
+    }
+
     
 }
 

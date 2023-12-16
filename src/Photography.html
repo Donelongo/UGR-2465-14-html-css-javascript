@@ -11,13 +11,13 @@
     <header class="header">
         <img  class="header__logo" src="/src/Images/name-logo.png" alt="Me">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav class="header__Navbar">
-            <ul class="header__Navbar__nav_link">
+        <nav class="header__nav-bar">
+            <ul class="header__nav-bar__nav-link">
                 <li><a href="/src/Home.html" id="home">Home</a></li>
                 <li><a href="/src/Accomp.html" id="accomplishment">Accomplishemnts</a></li>
                 <li><a href="/src/Hobbies.html" id="hobbies">Hobbies</a></li>
                 <li><a href="/src/Travels.html" id="travels">Travels</a></li>
-                <li><a href="/src/Photography.html" id="photography" class="header__Navbar__nav_link__current">Photography</a></li>
+                <li><a href="/src/Photography.html" id="photography" class="header__nav-bar__nav-link__current">Photography</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -34,54 +34,66 @@
             </p>
         </div>
         <div class="photos">
-            <div class="photos__landscape-carousel">
-                <div id="first-image">
+            <div class="photos__landscape-carousel all-carousel">
+                <button id="carousel-landscape-prev" class="photos__carousel-landscape-prev carousel-button">
+                    <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+                </button>
+                <div id="first-image" class="carouselIMG landscape">
                     <figure class="photos__landscape-carousel__slide">
                         <a href="/src/Images/IMG_1025.JPG"><img class="image sliding-image" src="/src/Images/IMG_1025.JPG" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="second-image">
+                <div id="second-image" class="carouselIMG landscape">
                     <figure class="photos__landscape-carousel__slide">
                         <a href="/src/Images/IMG_20210212_092836_623.jpg"><img class="image sliding-image" src="/src/Images/IMG_20210212_092836_623.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="thrird-image">
+                <div id="thrird-image" class="carouselIMG landscape">
                     <figure class="photos__landscape-carousel__slide">
                         <a href="/src/Images/IMG_20210212_092844_876.jpg"><img class="image sliding-image" src="/src/Images/IMG_20210212_092844_876.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
+                <button id="carousel-landscape-next" class="photos__carousel-landscape-next carousel-button">
+                    <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                </button>
             </div>
-            <div class="photos__portrait-carousel">
-                <div id="fourth-image">
+            <div class="photos__portrait-carousel all-carousel">
+                <button id="carousel-portrait-prev" class="photos__carousel-portrait-prev carousel-button">
+                    <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+                </button>
+                <div id="fourth-image" class="carouselIMG portrait">
                     <figure class="photos__portrait-carousel__slide">
                         <a href="/src/Images/IMG_20210212_092826_692.jpg"><img class="image sliding-image" src="/src/Images/IMG_20210212_092826_692.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="fifth-image">
+                <div id="fifth-image" class="carouselIMG portrait">
                     <figure class="photos__portrait-carousel__slide">
                         <a href="/src/Images/IMG_20211221_172455.jpg"><img class="image sliding-image" src="/src/Images/IMG_20211221_172455.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="sixth-image">
+                <div id="sixth-image" class="carouselIMG portrait">
                     <figure class="photos__portrait-carousel__slide">
                         <a href="/src/Images/IMG_20220103_074112.jpg"><img class="image sliding-image" src="/src/Images/IMG_20220103_074112.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="seventh-image">
+                <div id="seventh-image" class="carouselIMG portrait">
                     <figure class="photos__portrait-carousel__slide">
                         <a href="/src/Images/IMG_20220125_110128.jpg"><img class="image sliding-image" src="/src/Images/IMG_20220125_110128.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="eith-image">
+                <div id="eith-image" class="carouselIMG portrait">
                     <figure class="photos__portrait-carousel__slide">
                         <a href="/src/Images/IMG_20220126_133131.jpg"><img class="image sliding-image" src="/src/Images/IMG_20220126_133131.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
-                <div id="nineth-image">
+                <div id="nineth-image" class="carouselIMG portrait">
                     <figure class="photos__portrait-carousel__slide">
                         <a href="/src/Images/IMG_20220327_200356.jpg"><img class="image sliding-image" src="/src/Images/IMG_20220327_200356.jpg" alt="my-photography"></a>
                     </figure>
                 </div>
+                <button id="carousel-portrait-next" class="photos__carousel-portrait-next carousel-button">
+                    <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                </button>
             </div>
         </div>
         </main>
@@ -129,5 +141,6 @@
                 <p class="copy-right__text">&copy; 2021 Dagmawi Elias. All rights reserved.</p>
             </div>
         </footer>
+        <script src="../JavaScript/portifolio.js"></script>
     </body>
 </html>
