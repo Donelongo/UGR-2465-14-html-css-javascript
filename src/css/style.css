@@ -26,7 +26,6 @@ body {
 
 header{
     display: grid;
-    display: flex;
     flex-direction: column;
     background: var(--background);
     text-align: center;
@@ -219,6 +218,12 @@ p::first-letter {
     border-radius: 1em;
     width: 90%;
     object-fit: cover;
+    transition:all 0.3s ease-in-out;
+}
+
+.image-aside:hover {
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 
@@ -231,12 +236,6 @@ p::first-letter {
     margin: 1.25rem auto;
     
 }
-
-
-/* .sliding-image {
-    width: 96vw;
-} */
-
 
 .hobbies__hobbie-box {
     background-color: #7C898B;
@@ -251,13 +250,13 @@ p::first-letter {
     padding: 10px;
     background-color: #7C898B;
     margin: 10px 7px;
-
+    transition:all 0.3s ease-in-out;
 }
 
 .hobbies__hobbies-explanation:hover {
-    transition: transform 0.5s;
     background-color: #6e7275;
-    transform: scale(1.01);
+    transition: .5s;
+    transform: scale(1.02);
 
 }
 
@@ -267,6 +266,7 @@ p::first-letter {
     margin: 10px;
     transition: transform .5s;
 }
+
 
 .hobbies__hobbies-explanation__hobbie-image:hover {
     transform: scale(1.5);
