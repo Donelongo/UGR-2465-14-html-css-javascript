@@ -630,8 +630,8 @@ footer {
     }
 
     .header__logo{
-
-        grid-column: 2 / span 1;
+        grid-column: 1 / span 1;
+        margin-left: 10%;
     }
 
     nav{
